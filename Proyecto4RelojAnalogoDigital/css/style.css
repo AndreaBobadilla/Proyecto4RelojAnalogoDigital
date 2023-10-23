@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(195,34,172,1) 0%, rgba(255,250,51,1) 100%);;
+
+}
+
+.reloj {
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/relojimg.png");
+    background-size: cover;
+    border: 1.5rem double black;
+    border-radius: 50vh;
+    box-shadow: inset 0px 0px 23px 8px rgb(0, 60, 255);
+}
+
+.reloj::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #b5936f;
+    border-radius: 50vh;
+    z-index: 100;
+}
+
+.hora{
+    width: 200px;
+    height: 200px;
+}
+.minuto{
+    width: 250px;
+    height: 250px;
+}
+.segundo{
+    width: 280px;
+    height: 280px;
+}
+
+.hora::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 90px;
+    background: beige;
+    z-index: 10;
+    border-radius: 50vh;
+}
+
+.minuto::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 130px;
+    background: beige;
+    z-index: 11;
+    border-radius: 50vh;
+}
+
+.segundo::before {
+    content: '';
+    position: absolute;
+    width: 2.5px;
+    height: 150px;
+    background: beige;
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+.hora, .minuto, .segundo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+}
+
+.contenedor {
+    margin: 0px 0px 260px 48px;
+    max-width: min-content;
+    max-height: min-content; 
+}
+
+.relojDigi {
+    border: 1rem double #de7dea;
+    background-color: #edb8eb;
+    width: 190px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vh;
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+}
+
+.flor {
+    max-width: 100px;
+    max-height: 100px;
+    position: relative;
+    margin: 25px 0px 0px 130px;
+}
+
+.flor img {
+    width: 100px;
+    height: 100px;
+    transform: rotate(30deg);
+}
+
+.condor{
+    max-width: 95px;
+    max-height: 65px;
+    margin: 50px 0px 0px 15px;
+}
+
+.condor img{
+    width: 95px;
+    height: 65px;
+}
