@@ -8,7 +8,7 @@ function calcularTiempo(){
 
 
     hora = hora < 10 ? "0" + hora : hora;
-    hora = hora >= 12 ? + hora - 12: hora == 12; 
+    hora = hora >= 12 ? "0" + hora - 12: hora; 
     minuto = minuto < 10 ? "0" + minuto : minuto;
     segundo = segundo < 10 ? "0" + segundo : segundo;
 
